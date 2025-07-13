@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html data-dark-mode lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Karla:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="btn-container">
+      <button id="toggle">Dark Mode</button>
+    </div>
+    <h1 id="title-el">Generate a <span>random password</span></h1>
+    <h2 id="desc-el">Never use an insecure password again</h2>
+    <div class="pw-opt">
+      <div class="pw-length-slider">
+        <p class="pw-length-para">Length of password: </p>
+        <input id="length-slider" type="range" value="15" min="15" max="20">
+        <output id="length-output">15</output>
+      </div>
+      <div class="pw-number-slider">
+        <p class="pw-number-para">Numbers: </p>
+        <input id="number-slider" type="range" value="3" min="0" max="5">
+        <output id="number-output">3</output>
+      </div>
+      <div class="pw-symbol-slider">
+        <p class="pw-symbol-para">Symbols: </p>
+        <input id="symbol-slider" type="range" value="2" min="0" max="5">
+        <output id="symbol-output">2</output>
+      </div>
+    </div>
+    <button id="gen-pw-btn">
+      Generate Password
+    </button>
+    <div class="line-el"></div>
+    <div id="password-board" >
+      <button id="pw-1" class="password-text"></button>
+      <button id="pw-2" class="password-text"></button>
+    </div>
+  </div>
+</body>
+</html>
